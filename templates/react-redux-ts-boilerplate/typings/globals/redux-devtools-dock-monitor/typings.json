@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/2867a19221cd5e2449135aeed9f13f760b65f458/redux-devtools-dock-monitor/redux-devtools-dock-monitor.d.ts",
+    "raw": "registry:dt/redux-devtools-dock-monitor#1.1.1+20160902130643",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/2867a19221cd5e2449135aeed9f13f760b65f458/redux-devtools-dock-monitor/redux-devtools-dock-monitor.d.ts"
+  }
+}

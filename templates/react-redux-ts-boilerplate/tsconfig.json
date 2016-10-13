@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "target": "es6",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "experimentalDecorators": true
+  },
+  "compileOnSave": false,
+  "exclude": [
+    "test",
+    "node_modules",
+    "typings"
+  ]
+}

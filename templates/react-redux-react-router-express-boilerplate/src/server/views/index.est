@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>React-Redux-Express-boilerplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="${scope.public}/${scope.assets.app.css}"/>
+    <script src="${scope.public}/${scope.assets.core.js}"></script>
+    <script>
+        window.__INIT_STATE__ = ${JSON.stringify(scope.initState)};
+    </script>
+</head>
+<body>
+    <div id="app">${scope.markup || ''}</div>
+    <script src="${scope.public}/${scope.assets.app.js}"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "name": "react-redux-ts-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "unfreeze": "aegis unfreeze",
+    "freeze": "aegis freeze",
+    "build": "aegis build -c --ts --dev",
+    "release": "aegis build -c --ts",
+    "start": "aegis start -c --ts --dev",
+    "test": "aegis test --ts --verbose",
+    "test:watch": "aegis test --ts -w --verbose"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "domready": "^1.0.8",
+    "lodash": "^4.16.4",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
+    "redux-devtools": "^3.3.1",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.0.11",
+    "redux-logger": "^2.7.0",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.22.0",
+    "webpack": "^1.13.2"
+  }
+}

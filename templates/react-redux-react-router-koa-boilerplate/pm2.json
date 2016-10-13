@@ -1,0 +1,17 @@
+{
+  "apps": [{
+    "name": "react-redux-react-router-express-boilerplate",
+    "script": "./build/server.js",
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "out_file": "./logs/react-redux-react-router-express-boilerplate.log",
+    "error_file": "./logs/react-redux-react-router-express-boilerplate.err.log",
+    "pid_file": "./logs/react-redux-react-router-express-boilerplate.pid",
+    "ignoreWatch": ["[\\/\\\\]\\./", "node_modules"],
+    "watch": "true",
+    "exec_mode": "cluster",
+    "instances": "4",
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }]
+}

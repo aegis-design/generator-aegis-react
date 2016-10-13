@@ -1,0 +1,17 @@
+{
+  "globalDependencies": {
+    "chai": "registry:dt/chai#3.4.0+20160601211834",
+    "domready": "registry:dt/domready#0.0.0+20160316155526",
+    "lodash": "registry:dt/lodash#4.14.0+20161004174455",
+    "mocha": "registry:dt/mocha#2.2.5+20160720003353",
+    "react": "registry:dt/react#0.14.0+20161008064207",
+    "react-dom": "registry:dt/react-dom#0.14.0+20160412154040",
+    "react-redux": "registry:dt/react-redux#4.4.0+20160908183346",
+    "redux": "registry:dt/redux#3.5.2+20160703092728",
+    "redux-devtools": "registry:dt/redux-devtools#3.0.0+20161003133120",
+    "redux-devtools-dock-monitor": "registry:dt/redux-devtools-dock-monitor#1.1.1+20160902130643",
+    "redux-devtools-log-monitor": "registry:dt/redux-devtools-log-monitor#1.0.11+20160902130643",
+    "redux-logger": "registry:dt/redux-logger#2.6.0+20160619033847",
+    "redux-thunk": "registry:dt/redux-thunk#2.1.0+20160703120921"
+  }
+}
