@@ -1,6 +1,8 @@
-# generator-react-redux-express
+# generator-aegis-react
 
-![Amount of Downloads per month](https://img.shields.io/npm/dm/generator-aegis-react.svg "Amount of Downloads") ![Dependency Tracker](https://img.shields.io/david/aegis-design/generator-aegis-react.svg "Dependency Tracker")  ![Node Version](https://img.shields.io/node/v/generator-aegis-react.svg "Node Version")
+[![generator-aegis-react@npm](https://badge.fury.io/js/koa.png)](https://npmjs.org/package/koa)&nbsp;[![Build Status](https://travis-ci.org/aegis-design/generator-aegis-react.png)](https://travis-ci.org/aegis-design/generator-aegis-react)
+
+[![NPM](https://nodei.co/npm/generator-aegis-react.png)](https://nodei.co/npm/generator-aegis-react/) [![NPM](https://nodei.co/npm-dl/generator-aegis-react.png?months=6)](https://nodei.co/npm/generator-aegis-react/)
 
 > Yeoman generator for [ReactJS](http://facebook.github.io/react/) - lets you quickly set up a project including karma test runner and [Webpack](http://webpack.github.io/) module system.
 
