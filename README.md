@@ -1,6 +1,6 @@
 # generator-aegis-react
 
-[![generator-aegis-react@npm](https://badge.fury.io/js/koa.png)](https://npmjs.org/package/koa)&nbsp;[![Build Status](https://travis-ci.org/aegis-design/generator-aegis-react.png)](https://travis-ci.org/aegis-design/generator-aegis-react)
+[![generator-aegis-react@npm](https://badge.fury.io/js/generator-aegis-react.png)](https://npmjs.org/package/generator-aegis-react)
 
 [![NPM](https://nodei.co/npm/generator-aegis-react.png)](https://nodei.co/npm/generator-aegis-react/) [![NPM](https://nodei.co/npm-dl/generator-aegis-react.png?months=6)](https://nodei.co/npm/generator-aegis-react/)
 
