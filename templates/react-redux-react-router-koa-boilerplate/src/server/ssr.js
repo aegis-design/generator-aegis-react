@@ -8,6 +8,7 @@ import { match, RouterContext } from 'react-router';
 import { createStore, DevTools } from '../utils';
 import reducers from '../reducers';
 import routes from '../routes';
+import koaRouter from 'koa-router';
 
 const initState = {
   home: {
@@ -22,12 +23,14 @@ function render(config) {
 }
 
 export default function init(server) {
-  server.get('*', (req, res) => {
-    match({ routes, location: req.url }, (err, redirectLocation, props) => {
+  const router = koaRouter();
+  router.get('*', async (ctx, next) => {
+    match({ routes, location: ctx.url }, (err, redirectLocation, props) => {
       if (err) {
-        res.status(500).send(err.message);
+        ctx.status = 500;
+        ctx.message = err.message;
       } else if (redirectLocation) {
-        res.redirect(302, redirectLocation.pathname + redirectLocation.search);
+        ctx.redirect(302, redirectLocation.pathname + redirectLocation.search);
       } else if (props) {
         const markup = renderToString(
           <Provider store={store}>
@@ -39,10 +42,12 @@ export default function init(server) {
             </div>
           </Provider>
         );
-        res.send(render(Object.assign({markup, initState}, server.config)));
+        ctx.type = 'html';
+        ctx.body = render(Object.assign({markup, initState}, server.config));
       } else {
-        res.sendStatus(404);
+        ctx.status = 400;
       }
     });
   });
+  server.use(router.routes());
 }

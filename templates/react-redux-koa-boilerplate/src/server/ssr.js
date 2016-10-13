@@ -5,6 +5,7 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { Provider } from 'react-redux';
 import { createStore } from '../utils';
+import koaRouter from 'koa-router';
 
 const initState = {
   home: {
@@ -21,7 +22,9 @@ function render(feature, config) {
 }
 
 export default function init(server) {
-  server.get('/', (req, res) => {
+  const router = koaRouter();
+  router.get('/', async (ctx, next) => {
+    console.log('xxxxxxxx');
     const reducers = getReducers('home');
     const store = createStore(reducers, initState);
     const App = require('../home/app').default;
@@ -32,6 +35,9 @@ export default function init(server) {
         </div>
       </Provider>
     );
-    res.send(render('home', Object.assign({markup, initState}, server.config)));
+    ctx.type = 'html';
+    ctx.body = render('home', Object.assign({markup, initState}, server.config));
+    // next();
   });
+  server.use(router.routes());
 }
