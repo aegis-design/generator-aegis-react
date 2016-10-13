@@ -1,12 +1,16 @@
 /**
  * Created by Zhengfeng.Yao on 16/10/9.
  */
+import { shallowEqual, pureRender } from './pureRender';
+import wrapcomponent from './wrapcomponent';
 import createStore from './createStore';
-import composeConstants from './composeConstants';
-import devTools from './devtools';
+import DevTools from './devtools';
 
 export {
-  composeConstants,
+  shallowEqual,
+  pureRender,
+  wrapcomponent,
   createStore,
-  devTools
+  DevTools
 }
+

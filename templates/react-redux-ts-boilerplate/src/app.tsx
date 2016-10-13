@@ -3,21 +3,21 @@
  */
 import * as React from 'react';
 import { connect } from 'react-redux';
-<% if (style === 'less') { -%>
+// <% if (style === 'less') { -%>
 import './style.less';
-<% } -%>
-<% if (style === 'sass') { -%>
-import './style.sass';
-<% } -%>
-<% if (style === 'scss') { -%>
-import './style.scss';
-<% } -%>
-<% if (style === 'styl') { -%>
-import './style.styl';
-<% } -%>
-<% if (style === 'css') { -%>
-import './style.css';
-<% } -%>
+// <% } -%>
+// <% if (style === 'sass') { -%>
+// import './style.sass';
+// <% } -%>
+// <% if (style === 'scss') { -%>
+// import './style.scss';
+// <% } -%>
+// <% if (style === 'styl') { -%>
+// import './style.styl';
+// <% } -%>
+// <% if (style === 'css') { -%>
+// import './style.css';
+// <% } -%>
 
 @connect(state => state.app)
 export default class App extends React.Component<any, any> {

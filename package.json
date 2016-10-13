@@ -1,6 +1,6 @@
 {
   "name": "generator-aegis-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React脚手架，编译工具使用自研工具aegis-tools",
   "main": "generators/app/index.js",
   "scripts": {
