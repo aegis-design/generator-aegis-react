@@ -94,7 +94,7 @@ class AppGenerator extends Generators.Base {
     //     packageSettings.devDependencies[dependency.name] = dependency.version;
     //   }
     // }
-    packageSettings.devDependencies['aegis-tools'] = '^1.0.8';
+    packageSettings.devDependencies['aegis-tools'] = '^1.0.9';
 
     this.fs.writeJSON(this.destinationPath('package.json'), packageSettings);
   }
